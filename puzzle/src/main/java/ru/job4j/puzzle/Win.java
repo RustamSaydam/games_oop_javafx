@@ -18,7 +18,7 @@ public class Win {
     public static boolean checkWinRow(int[][] board, int row) {
         boolean rsl = true;
         for (int column = 0; column < board.length; column++) {
-            if (board [row][column] == 0) {
+            if (board[row][column] == 0) {
                 rsl = false;
                 break;
             }
@@ -27,14 +27,14 @@ public class Win {
     }
 
     public static boolean checkWinColumn(int[][] board, int column) {
-      boolean rsl = true;
-      for (int row = 0; row < board.length; row++) {
-          if(board[row][column] == 0) {
-              rsl = false;
-              break;
-          }
-      }
-      return rsl;
+        boolean rsl = true;
+        for (int row = 0; row < board.length; row++) {
+            if (board[row][column] == 0) {
+                rsl = false;
+                break;
+            }
+        }
+        return rsl;
     }
 }
 
