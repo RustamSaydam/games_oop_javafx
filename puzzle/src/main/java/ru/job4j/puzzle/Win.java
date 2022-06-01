@@ -13,7 +13,6 @@ public class Win {
         return rsl;
     }
 
-
     public static boolean checkWinRow(int[][] board, int row) {
         boolean rsl = true;
         for (int column = 0; column < board.length; column++) {
